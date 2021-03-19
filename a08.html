@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+ritual to see something
+</body>
+<script>
+function f2()
+{
+let x=[];
+x.push(3); //prefer to this adding ain array becuase
+//it just adds at the last that is ok for us..
+x.push(4);
+//how to add elements in the array...
+
+//modify know index and modify it..
+x[0]=67;
+
+let cts="";
+for(let y=0; y < x.length; y++)
+{
+	cts+= x[y] + " ";
+}
+alert(cts);
+
+let inx =x.indexOf(89); //hardingcoding of index is bad idea...
+if(inx != -1)
+	x.splice(inx,1);
+else
+    alert("element not found");
+cts="";
+for(let y=0; y < x.length; y++)
+{
+	cts+= x[y] + " ";
+}
+alert(cts);
+
+
+}
+f2();
+</script>
+</html>
